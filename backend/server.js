@@ -35,9 +35,3 @@ app.listen(5000, () => {
     connectDB();
     console.log('Server Started at http://localhost:5000')
 });
-
-
-
-//password: ZqU3z4qriV23kTwj
-
-//mongodb+srv://tlokotsemogudi:ZqU3z4qriV23kTwj@cluster0.4xheq9c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
