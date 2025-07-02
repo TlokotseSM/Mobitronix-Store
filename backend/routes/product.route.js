@@ -4,16 +4,7 @@ import Product from "../models/product.model.js"
 
 const router = express.Router();
 
-router.get("/", async (req,res) => {
-    
-    try {
-        const products = await Product.find({});
-        res.status(200).json({success:true, data:products});
-    } catch (error) {
-        console.error("Error in fetching products:", error.message);
-        res.status(500).json({success:false, message: "Server Error"});
-    }
-});
+router.get("/", getProducts);
 
 router.post("/", async (req,res) => {
     const product = req.body; //user will send this data
