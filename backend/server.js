@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json()); //allows us to accept json data in the req.body
 
-app.use("/api/products",productRoutes);
+app.use("/api/products", productRoutes);
 
 app.listen(5000, () => {
     connectDB();
